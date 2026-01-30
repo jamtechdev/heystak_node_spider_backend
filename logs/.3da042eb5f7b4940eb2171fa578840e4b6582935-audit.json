@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 5
+    },
+    "auditLog": "C:\\2026\\spider-complete\\spider-backend-nodejs\\logs\\.3da042eb5f7b4940eb2171fa578840e4b6582935-audit.json",
+    "files": [
+        {
+            "date": 1769500082301,
+            "name": "C:\\2026\\spider-complete\\spider-backend-nodejs\\logs\\api-2026-01-27.log",
+            "hash": "0e01c0f3d5c98af368361ce5648cbb2e428ee61c471285920849faa7cb0676bf"
+        },
+        {
+            "date": 1769577325537,
+            "name": "C:\\2026\\spider-complete\\spider-backend-nodejs\\logs\\api-2026-01-28.log",
+            "hash": "f929ec50aaed14b7de73bac81deb0096051f4fda29b8daf0394f9ba278a49390"
+        }
+    ],
+    "hashType": "sha256"
+}
