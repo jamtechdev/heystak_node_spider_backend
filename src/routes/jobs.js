@@ -1,10 +1,22 @@
-import express from 'express';
-import { v4 as uuidv4 } from 'uuid';
-import { JobManager, checkRedisConnection } from '../core/redis.js';
-import config from '../config/index.js';
-import { apiLogger } from '../core/logger.js';
+import express from "express";
+import { v4 as uuidv4 } from "uuid";
+import { JobManager, checkRedisConnection } from "../core/redis.js";
+import config from "../config/index.js";
+import { apiLogger } from "../core/logger.js";
+import multer from "multer";
 
 const router = express.Router();
+
+const upload = multer({
+  fileFilter: (req, file, cb) => {
+    if (file.mimetype === "text/csv" || file.originalname.endsWith(".csv")) {
+      cb(null, true);
+    } else {
+      cb(new Error("Only CSV files are allowed"), false);
+    }
+  },
+  dest: "uploads/",
+});
 
 function extractPageId(url) {
   const patterns = [/view_all_page_id=(\d+)/, /page_id=(\d+)/];
@@ -14,38 +26,53 @@ function extractPageId(url) {
       return match[1];
     }
   }
-  return 'unknown';
+  return "unknown";
 }
 
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     // Check Redis
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
-    const { page_ids, max_ads_per_page, save_json, save_db, auto_analyze, analysis_mode, start_date_formatted, end_date_formatted, period } = req.body;
+    const {
+      page_ids,
+      max_ads_per_page,
+      save_json,
+      save_db,
+      auto_analyze,
+      analysis_mode,
+      start_date_formatted,
+      end_date_formatted,
+      period,
+    } = req.body;
 
     // Set default max_ads_per_page to config limit if not provided
-    const maxAds = max_ads_per_page !== undefined && max_ads_per_page !== null 
-      ? parseInt(max_ads_per_page, 10) 
-      : config.MAX_ADS_PER_BRAND;
+    const maxAds =
+      max_ads_per_page !== undefined && max_ads_per_page !== null
+        ? parseInt(max_ads_per_page, 10)
+        : config.MAX_ADS_PER_BRAND;
 
     // Validate
     if (page_ids.length > config.MAX_BRANDS) {
-      return res.status(400).json({ error: `Maximum ${config.MAX_BRANDS} pages allowed` });
+      return res
+        .status(400)
+        .json({ error: `Maximum ${config.MAX_BRANDS} pages allowed` });
     }
 
     // Skip max ads validation if date filters are provided
     if (!start_date_formatted && !end_date_formatted) {
       if (maxAds > config.MAX_ADS_PER_BRAND) {
-        return res.status(400).json({ error: `Maximum ${config.MAX_ADS_PER_BRAND} ads per page allowed` });
+        return res.status(400).json({
+          error: `Maximum ${config.MAX_ADS_PER_BRAND} ads per page allowed`,
+        });
       }
     }
 
     if (!page_ids || page_ids.length === 0) {
-      return res.status(400).json({ error: 'At least one page_id required' });
+      return res.status(400).json({ error: "At least one page_id required" });
     }
 
     // Create job manager
@@ -65,7 +92,7 @@ router.post('/', async (req, res) => {
         save_json: save_json !== false,
         save_db: save_db !== false,
         auto_analyze: auto_analyze !== false,
-        analysis_mode: analysis_mode || 'balanced',
+        analysis_mode: analysis_mode || "balanced",
         page_id: pageId,
         start_date_formatted,
         end_date_formatted,
@@ -78,8 +105,8 @@ router.post('/', async (req, res) => {
     await jobManager.close();
 
     res.json({
-      job_id: jobIds.join(','),
-      status: 'queued',
+      job_id: jobIds.join(","),
+      status: "queued",
       message: `Created ${jobIds.length} job(s). Scraping ${page_ids.length} page(s) with up to ${maxAds} ads each.`,
     });
   } catch (error) {
@@ -88,9 +115,9 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.get('/', async (req, res) => {
+router.get("/", async (req, res) => {
   try {
-    const limit = parseInt(req.query.limit || '50', 10);
+    const limit = parseInt(req.query.limit || "50", 10);
     const jobManager = new JobManager();
     await jobManager.init();
 
@@ -107,7 +134,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/:jobId', async (req, res) => {
+router.get("/:jobId", async (req, res) => {
   try {
     const { jobId } = req.params;
     const jobManager = new JobManager();
@@ -117,25 +144,25 @@ router.get('/:jobId', async (req, res) => {
     await jobManager.close();
 
     if (!job) {
-      return res.status(404).json({ error: 'Job not found' });
+      return res.status(404).json({ error: "Job not found" });
     }
 
     const progress = job.progress || {};
-    const status = job.status || 'unknown';
+    const status = job.status || "unknown";
 
     const statusMap = {
-      queued: 'queued',
-      running: 'processing',
-      completed: 'completed',
-      failed: 'failed',
-      cancelled: 'cancelled',
+      queued: "queued",
+      running: "processing",
+      completed: "completed",
+      failed: "failed",
+      cancelled: "cancelled",
     };
 
     res.json({
       job_id: jobId,
       status: statusMap[status] || status,
       progress: progress.scraped || 0,
-      page_ids: [extractPageId(job.url || '')],
+      page_ids: [extractPageId(job.url || "")],
       ads_count: progress.scraped || 0,
       file_path: null,
       error: job.error,
@@ -149,11 +176,11 @@ router.get('/:jobId', async (req, res) => {
 });
 // Otherwise Express will match /clear-completed as /:jobId with jobId="clear-completed"
 
-router.post('/clear-completed', async (req, res) => {
+router.post("/clear-completed", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const jobManager = new JobManager();
@@ -168,11 +195,11 @@ router.post('/clear-completed', async (req, res) => {
   }
 });
 
-router.post('/clear-failed', async (req, res) => {
+router.post("/clear-failed", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const jobManager = new JobManager();
@@ -187,11 +214,11 @@ router.post('/clear-failed', async (req, res) => {
   }
 });
 
-router.post('/clear-cancelled', async (req, res) => {
+router.post("/clear-cancelled", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const jobManager = new JobManager();
@@ -206,7 +233,7 @@ router.post('/clear-cancelled', async (req, res) => {
   }
 });
 
-router.delete('/:jobId', async (req, res) => {
+router.delete("/:jobId", async (req, res) => {
   try {
     const { jobId } = req.params;
     const jobManager = new JobManager();
@@ -215,7 +242,7 @@ router.delete('/:jobId', async (req, res) => {
     const job = await jobManager.getJob(jobId);
     if (!job) {
       await jobManager.close();
-      return res.status(404).json({ error: 'Job not found' });
+      return res.status(404).json({ error: "Job not found" });
     }
 
     await jobManager.deleteJob(jobId);
@@ -228,7 +255,7 @@ router.delete('/:jobId', async (req, res) => {
   }
 });
 
-router.post('/:jobId/cancel', async (req, res) => {
+router.post("/:jobId/cancel", async (req, res) => {
   try {
     const { jobId } = req.params;
     const jobManager = new JobManager();
@@ -237,7 +264,7 @@ router.post('/:jobId/cancel', async (req, res) => {
     const job = await jobManager.getJob(jobId);
     if (!job) {
       await jobManager.close();
-      return res.status(404).json({ error: 'Job not found' });
+      return res.status(404).json({ error: "Job not found" });
     }
 
     await jobManager.cancelJob(jobId);
@@ -250,7 +277,7 @@ router.post('/:jobId/cancel', async (req, res) => {
   }
 });
 
-router.post('/:jobId/requeue', async (req, res) => {
+router.post("/:jobId/requeue", async (req, res) => {
   try {
     const { jobId } = req.params;
     const jobManager = new JobManager();
@@ -259,7 +286,7 @@ router.post('/:jobId/requeue', async (req, res) => {
     const job = await jobManager.getJob(jobId);
     if (!job) {
       await jobManager.close();
-      return res.status(404).json({ error: 'Job not found' });
+      return res.status(404).json({ error: "Job not found" });
     }
 
     await jobManager.requeueJob(jobId);
@@ -272,11 +299,11 @@ router.post('/:jobId/requeue', async (req, res) => {
   }
 });
 
-router.post('/clear-queued', async (req, res) => {
+router.post("/clear-queued", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const jobManager = new JobManager();
@@ -285,7 +312,7 @@ router.post('/clear-queued', async (req, res) => {
     let count = 0;
 
     for (const job of jobs) {
-      if (job.status === 'queued' || job.status === 'running') {
+      if (job.status === "queued" || job.status === "running") {
         await jobManager.deleteJob(job.job_id);
         count++;
       }
@@ -298,16 +325,16 @@ router.post('/clear-queued', async (req, res) => {
   }
 });
 
-router.post('/bulk/delete', async (req, res) => {
+router.post("/bulk/delete", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const { job_ids } = req.body;
     if (!Array.isArray(job_ids)) {
-      return res.status(400).json({ error: 'job_ids must be an array' });
+      return res.status(400).json({ error: "job_ids must be an array" });
     }
 
     const jobManager = new JobManager();
@@ -330,16 +357,16 @@ router.post('/bulk/delete', async (req, res) => {
   }
 });
 
-router.post('/bulk/cancel', async (req, res) => {
+router.post("/bulk/cancel", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const { job_ids } = req.body;
     if (!Array.isArray(job_ids)) {
-      return res.status(400).json({ error: 'job_ids must be an array' });
+      return res.status(400).json({ error: "job_ids must be an array" });
     }
 
     const jobManager = new JobManager();
@@ -348,7 +375,7 @@ router.post('/bulk/cancel', async (req, res) => {
     let cancelledCount = 0;
     for (const jobId of job_ids) {
       const job = await jobManager.getJob(jobId);
-      if (job && (job.status === 'queued' || job.status === 'running')) {
+      if (job && (job.status === "queued" || job.status === "running")) {
         await jobManager.cancelJob(jobId);
         cancelledCount++;
       }
@@ -362,16 +389,16 @@ router.post('/bulk/cancel', async (req, res) => {
   }
 });
 
-router.post('/bulk/requeue', async (req, res) => {
+router.post("/bulk/requeue", async (req, res) => {
   try {
     const redisAvailable = await checkRedisConnection();
     if (!redisAvailable) {
-      return res.status(503).json({ error: 'Redis is not available' });
+      return res.status(503).json({ error: "Redis is not available" });
     }
 
     const { job_ids } = req.body;
     if (!Array.isArray(job_ids)) {
-      return res.status(400).json({ error: 'job_ids must be an array' });
+      return res.status(400).json({ error: "job_ids must be an array" });
     }
 
     const jobManager = new JobManager();
@@ -380,7 +407,7 @@ router.post('/bulk/requeue', async (req, res) => {
     let requeuedCount = 0;
     for (const jobId of job_ids) {
       const job = await jobManager.getJob(jobId);
-      if (job && job.status === 'failed') {
+      if (job && job.status === "failed") {
         await jobManager.requeueJob(jobId);
         requeuedCount++;
       }
@@ -390,6 +417,114 @@ router.post('/bulk/requeue', async (req, res) => {
     res.json({ message: `Requeued ${requeuedCount} job(s)` });
   } catch (error) {
     apiLogger.error(`[API] Error bulk requeuing jobs: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+router.post("/csv", upload.single("file"), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({ error: "No CSV file uploaded" });
+    }
+
+    const fs = await import("fs");
+    const csv = await import("csv-parser");
+
+    const results = [];
+    fs.createReadStream(req.file.path)
+      .pipe(csv.default())
+      .on("data", (data) => results.push(data))
+      .on("end", async () => {
+        fs.unlinkSync(req.file.path);
+
+        const redisAvailable = await checkRedisConnection();
+        if (!redisAvailable) {
+          return res.status(503).json({ error: "Redis is not available" });
+        }
+
+        const {
+          max_ads_per_page,
+          save_json,
+          save_db,
+          auto_analyze,
+          analysis_mode,
+          start_date_formatted,
+          end_date_formatted,
+          period,
+        } = req.body;
+
+        const maxAds =
+          max_ads_per_page !== undefined && max_ads_per_page !== null
+            ? parseInt(max_ads_per_page, 10)
+            : config.MAX_ADS_PER_BRAND;
+
+        if (!start_date_formatted && !end_date_formatted) {
+          if (maxAds > config.MAX_ADS_PER_BRAND) {
+            return res.status(400).json({
+              error: `Maximum ${config.MAX_ADS_PER_BRAND} ads per page allowed`,
+            });
+          }
+        }
+
+        if (results.length === 0) {
+          return res.status(400).json({ error: "CSV file is empty" });
+        }
+
+        if (results.length > config.MAX_BRANDS) {
+          return res
+            .status(400)
+            .json({ error: `Maximum ${config.MAX_BRANDS} pages allowed` });
+        }
+
+        const jobManager = new JobManager();
+        await jobManager.init();
+
+        const jobIds = [];
+        for (const row of results) {
+          let url = null;
+          const keys = Object.keys(row);
+          for (const key of keys) {
+            if (key.includes("facebook.com/ads/library")) {
+              url = row[key];
+              break;
+            }
+          }
+
+          if (!url) {
+            continue;
+          }
+
+          const pageId = extractPageId(url);
+
+          const jobId = uuidv4().substring(0, 8);
+
+          await jobManager.createJob({
+            job_id: jobId,
+            url,
+            max_ads: maxAds,
+            save_json: save_json !== false,
+            save_db: save_db !== false,
+            auto_analyze: auto_analyze !== false,
+            analysis_mode: analysis_mode || "balanced",
+            page_id: pageId,
+            start_date_formatted,
+            end_date_formatted,
+            period,
+          });
+
+          jobIds.push(jobId);
+        }
+
+        await jobManager.close();
+
+        res.json({
+          job_id: jobIds.join(","),
+          status: "queued",
+          message: `Created ${jobIds.length} job(s) from CSV with ${results.length} page(s). Scraping up to ${maxAds} ads each.`,
+        });
+      });
+  } catch (error) {
+    apiLogger.error(`[API] Error creating job from CSV: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 });

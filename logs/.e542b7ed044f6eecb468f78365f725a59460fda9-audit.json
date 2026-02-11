@@ -6,14 +6,9 @@
     "auditLog": "D:\\spider-backend-nodejs 1\\logs\\.e542b7ed044f6eecb468f78365f725a59460fda9-audit.json",
     "files": [
         {
-            "date": 1769684001971,
-            "name": "D:\\spider-backend-nodejs 1\\logs\\api-2026-01-29.log",
-            "hash": "1232262f456f501c56f151d8557744908d7ff9ed5069c6e98e849d607ca77adb"
-        },
-        {
-            "date": 1769747992266,
-            "name": "D:\\spider-backend-nodejs 1\\logs\\api-2026-01-30.log",
-            "hash": "eb7d4d09a44d9459e814ae1caee9803b628e16cea9dcb51d8982bc4f8f1f081a"
+            "date": 1770801977768,
+            "name": "D:\\spider-backend-nodejs 1\\logs\\api-2026-02-11.log",
+            "hash": "ca14e20b8b522339c247040ca39e7f884ad20ebfc1a34c14b52b2ba6656af699"
         }
     ],
     "hashType": "sha256"
