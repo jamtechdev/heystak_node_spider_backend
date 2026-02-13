@@ -34,6 +34,7 @@ export class ApifyFacebookScraper {
       scrapeAdDetails: false,
       'scrapePageAds.activeStatus': 'all',
       'scrapePageAds.countryCode': 'ALL',
+      'scrapePageAds.sortBy': 'most_recent'
     };
 
     // Add period filter if provided (takes precedence over date filters)

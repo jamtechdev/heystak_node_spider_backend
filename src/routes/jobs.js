@@ -83,7 +83,7 @@ router.post("/", async (req, res) => {
     const jobIds = [];
     for (const pageId of page_ids) {
       const jobId = uuidv4().substring(0, 8);
-      const url = `https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&view_all_page_id=${pageId}`;
+      const url = `https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=${pageId}`;
 
       await jobManager.createJob({
         job_id: jobId,
