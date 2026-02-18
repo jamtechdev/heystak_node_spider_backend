@@ -481,14 +481,19 @@ router.post("/csv", upload.single("file"), async (req, res) => {
 
         const jobIds = [];
         for (const row of results) {
-          let url = null;
-          const keys = Object.keys(row);
-          for (const key of keys) {
-            if (key.includes("facebook.com/ads/library")) {
-              url = row[key];
-              break;
-            }
-          }
+          let url = row.url;
+
+          // console.log(row.url);
+          // const keys = Object.keys(row);
+
+          // for (const key of keys) {
+          //   if (key.includes("facebook.com/ads/library")) {
+          //     url = row[key];
+
+          //     break;
+          //   }
+          // }
+          // console.log(url);
 
           if (!url) {
             continue;
