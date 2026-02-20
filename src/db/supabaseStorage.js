@@ -187,11 +187,28 @@ export class SupabaseStorage {
         }
       }
 
+      // Check for duplicate by platform_id
+      try {
+        const existingResponse = await this.client.get('/rest/v1/ads', {
+          params: {
+            platform_id: `eq.${adData.platform_id}`,
+            select: 'id',
+          },
+        });
+
+        if (existingResponse.data && existingResponse.data.length > 0) {
+          workerLogger.info(`[DB] Ad with platform_id ${adData.platform_id} already exists, skipping`);
+          return existingResponse.data[0].id;
+        }
+      } catch (checkError) {
+        workerLogger.warn(`[DB] Duplicate check failed: ${checkError.message}, proceeding with insert`);
+      }
+
       // Try to save ad
       try {
         workerLogger.debug(`[DB] Attempting to save ad with platform_id: ${adData.platform_id}`);
         workerLogger.debug(`[DB] Ad data keys: ${Object.keys(cleanedData).join(', ')}`);
-        
+
         const response = await this.client.post('/rest/v1/ads', cleanedData);
         const result = Array.isArray(response.data) ? response.data[0] : response.data;
         const adId = result?.id;

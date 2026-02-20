@@ -1,0 +1,765 @@
+[
+  {
+    "ad_archive_id": "1270872801200251",
+    "collation_count": 1,
+    "collation_id": "1453185745817426",
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/530999336_805963408429148_689903105098296460_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=VLeFr6pYNA0Q7kNvwGUqLV-&_nc_oc=Adl_CghU7Qs-mlsu0aa7NHgqaV5kKBYJWAHWA-tbbhaUOW1QQvd8yvaxUXmACAfYatg&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfsvmWrX95o16epXAor5pM8CQc9OuZW9jbAmhjRjyTRCbw&oe=699B612A",
+      "event": null,
+      "caption": null,
+      "cta_text": null,
+      "cards": [],
+      "body": {
+        "text": "🎵 It's not like you to say sorry - I was waitin' on a different story 🎵 #nickelback #howyouremindme #indie"
+      },
+      "cta_type": null,
+      "display_format": "VIDEO",
+      "link_description": null,
+      "link_url": null,
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": null,
+      "videos": [
+        {
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/531417627_1835593410665521_528174536780427877_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Av8WFQGeyxgQ7kNvwFr_zkL&_nc_oc=AdkeUynXJCtTfzOIOt54GJOb8cwViIYiCsxTMfzDPd_yKI4y0Pocqo9_IlRCL7xgqE0&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afta-KqB_tmXHzNmzv9dnr_4-y_7Y3oLYaHAPxf3o5-ryQ&oe=699B6D44",
+          "video_sd_url": "https://video-mia3-3.xx.fbcdn.net/o1/v/t2/f2/m412/AQN3Gll7nqTFkMCQtyUhnv9_ZNT8a-RU_b2oPBZVqnADQD7dYyiSj_HTVuhvwG5qXwmN_1ouhSjU9NDH0T2WDbOtWiKDJ4xNlKsbaVsP5w.mp4?_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-mia3-3.xx.fbcdn.net&_nc_ohc=FvPxF5-GYsIQ7kNvwFg1b_A&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI4NTM5NjAyMzIzNTk3OCwiYXNzZXRfYWdlX2RheXMiOjIwNCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_AftoA7yUwlB8Mb-iS-IZ9MmGv0iOaDTGph3HZbIxSpahHw&oe=699B4E5E",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": ""
+        }
+      ],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1756537200,
+    "publisher_platform": [
+      "INSTAGRAM"
+    ],
+    "start_date": 1754895600,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 1,
+    "ads_count": 1,
+    "start_date_formatted": "2025-08-11 07:00:00",
+    "end_date_formatted": "2025-08-30 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=1270872801200251",
+    "analysis": {
+      "hook": null,
+      "transcript_analysis": {
+        "full_transcript": "🎵 Outro Music 🎵",
+        "has_speech": true,
+        "rejected_reason": "too_short"
+      },
+      "analysis_mode": "video_no_transcript",
+      "media_types_analyzed": [
+        "video"
+      ],
+      "analyzed_at": "2026-02-18T09:44:27.795Z"
+    }
+  },
+  {
+    "ad_archive_id": "1795345914721570",
+    "collation_count": 1,
+    "collation_id": "1410667930049483",
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/530516053_1108435941224126_2703691179928887722_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=N-O1hCD84tAQ7kNvwF7GoIy&_nc_oc=Adljx043QGENO2IKz5jN3dxT8ss7GkIyhMd6Wo8DQDITWNWtfj9jKES-_xbZTixTEeg&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afuq6x0jkYIzMqnN-NHHMI1YrIS6m6XukiIbBYIc-rDaqQ&oe=699B680A",
+      "event": null,
+      "caption": null,
+      "cta_text": null,
+      "cards": [],
+      "body": {
+        "text": "🎵 It's not like you to say sorry - I was waitin' on a different story 🎵 #nickelback #howyouremindme #indie"
+      },
+      "cta_type": null,
+      "display_format": "VIDEO",
+      "link_description": null,
+      "link_url": null,
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": null,
+      "videos": [
+        {
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/530648265_1087540209640817_683975623062881489_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=x5aqM1V6IYsQ7kNvwF2ljbA&_nc_oc=AdlTsgQyeZ4D_xyetydrVnOFQo-teNg8kc0CkBEDUbKWIG7_TFScrOVb0pJRcR2FpTY&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AftAC060IeidRgHxvtFMIkxqNGwkQPnFzUdqj18xRugTzQ&oe=699B76B0",
+          "video_sd_url": "https://video-mia3-1.xx.fbcdn.net/o1/v/t2/f2/m412/AQPFUhza9SwsKNaVr8SSm_-LRcFaFQOLgmlMfxqSidq4s3K5wSIWh2qtvcLiur1wt7fX0YwVuf-emvQ_CP52fVNnYQtFoKBqc9CRUWeJsQ.mp4?_nc_cat=111&_nc_sid=8bf8fe&_nc_ht=video-mia3-1.xx.fbcdn.net&_nc_ohc=shZWVNU3-mIQ7kNvwEciqrK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6NjkxODQ0ODAwNTE5OTg2LCJhc3NldF9hZ2VfZGF5cyI6MjAyLCJ2aV91c2VjYXNlX2lkIjoxMDc5OSwiZHVyYXRpb25fcyI6MTIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_Afsd3nx87MLGPjBsM6MzcSB2Ni-PdyKcXs8pIXigzD7gWw&oe=699B71DB",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": ""
+        }
+      ],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1756537200,
+    "publisher_platform": [
+      "INSTAGRAM"
+    ],
+    "start_date": 1754895600,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 2,
+    "ads_count": 1,
+    "start_date_formatted": "2025-08-11 07:00:00",
+    "end_date_formatted": "2025-08-30 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=1795345914721570",
+    "analysis": {
+      "hook": {
+        "audio_hook": "♪ It's not like you to say sorry.",
+        "visual_hook": "A close-up shot of a band member with intense expressions.",
+        "text": "♪ It's not like you to say sorry.",
+        "type": "curiosity",
+        "score": 8,
+        "_validation": {
+          "source": "first_sentence",
+          "similarity": 1,
+          "reason": "Fallback to first sentence (8 words).",
+          "original_gpt": "It's not like you to say sorry. A close-up shot of a band member with intense expressions."
+        }
+      },
+      "headline": {
+        "primary": "A world's waiting on a different story.",
+        "secondary": "Let forehead and your heart break."
+      },
+      "video_analysis": {
+        "opening_scene": "The video opens with a dramatic close-up of a band member, followed by quick cuts of the band performing.",
+        "key_scenes": [
+          "band performing on stage",
+          "emotional interactions between band members"
+        ],
+        "style": "lifestyle",
+        "has_person": true,
+        "has_product": false,
+        "music_mood": "intense"
+      },
+      "transcript_analysis": {
+        "full_transcript": "♪ It's not like you to say sorry. A world's waiting on a different story. And this time I'm mistaken. Let forehead and your heart break. ♪",
+        "summary": "The song conveys themes of regret and longing.",
+        "key_messages": [
+          "Regret and apology",
+          "Anticipation for change"
+        ],
+        "has_speech": true
+      },
+      "persona": {
+        "age_range": "25-34",
+        "gender": "all",
+        "interests": [
+          "music",
+          "live concerts"
+        ],
+        "pain_points": [
+          "feeling misunderstood",
+          "desire for connection"
+        ],
+        "desires": [
+          "emotional expression",
+          "musical experiences"
+        ],
+        "income_level": "middle",
+        "lifestyle": "active social life with a passion for music",
+        "summary": "Music lovers in their late twenties to early thirties seeking emotional connection."
+      },
+      "scores": {
+        "hook_strength": 8,
+        "visual_appeal": 7,
+        "message_clarity": 8,
+        "overall": 8
+      },
+      "analysis_mode": "video_transcript",
+      "media_types_analyzed": [
+        "video"
+      ],
+      "analyzed_at": "2026-02-18T09:44:45.130Z"
+    }
+  },
+  {
+    "ad_archive_id": "1966435427479993",
+    "collation_count": 1,
+    "collation_id": "749986397772494",
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia5-2.xx.fbcdn.net/v/t39.35426-6/530477736_2280212055766495_326589607580654511_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=100&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iChtTpjM0IYQ7kNvwEhWPSn&_nc_oc=AdnMT0YkbcaS2RGkjEJhNbjQx7SuWncxMBQijgPi3czi11mbFTqL3p7O7tNCTLUxerM&_nc_zt=14&_nc_ht=scontent-mia5-2.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AftQZAdMG7RtpNLhY1r57sO_3DS3NPPQvfprfPP4whaw9w&oe=699B71EE",
+      "event": null,
+      "caption": null,
+      "cta_text": null,
+      "cards": [],
+      "body": {
+        "text": "🎵 It's not like you to say sorry - I was waitin' on a different story 🎵 #nickelback #howyouremindme #indie"
+      },
+      "cta_type": null,
+      "display_format": "VIDEO",
+      "link_description": null,
+      "link_url": null,
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": null,
+      "videos": [
+        {
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/530269819_775794988157571_2492061805672154504_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=4T4rRAec8REQ7kNvwFISZdh&_nc_oc=AdnXiMLU4l391TES5RClK3npuug8zIUZegKJzVow5Kd9f1hMjc1VB2FpFM6atOVNJHM&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfuKorFudF9tqqlGbxeU57JHkPPAzeuXg63Ciplzh1V2Kg&oe=699B6A19",
+          "video_sd_url": "https://video-mia3-3.xx.fbcdn.net/o1/v/t2/f2/m412/AQPhH0sXJsEpgyun0i0yhywCyyUouj09jO19kNptL0CEWAx0gF4lXlS2XCtXwjE0cypKlisCGQ5QopMg77UxvGgIe2b65xPV7Dqq87fmmA.mp4?_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-mia3-3.xx.fbcdn.net&_nc_ohc=2Qa1iwHKXdUQ7kNvwGKOd8t&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTc5MDkwMTQzNDg0NjA2MSwiYXNzZXRfYWdlX2RheXMiOjIwNCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_AftbFBW9OHrjwdmO-a0x0l7OeuKtoaOuOcmSSvd6XkN_hQ&oe=699B455A",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": ""
+        }
+      ],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1756364400,
+    "publisher_platform": [
+      "INSTAGRAM"
+    ],
+    "start_date": 1755241200,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 3,
+    "ads_count": 1,
+    "start_date_formatted": "2025-08-15 07:00:00",
+    "end_date_formatted": "2025-08-28 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=1966435427479993",
+    "analysis": {
+      "hook": null,
+      "transcript_analysis": {
+        "full_transcript": null,
+        "has_speech": false,
+        "rejected_reason": "too_short"
+      },
+      "analysis_mode": "video_no_transcript",
+      "media_types_analyzed": [
+        "video"
+      ],
+      "analyzed_at": "2026-02-18T09:44:52.139Z"
+    }
+  },
+  {
+    "ad_archive_id": "1734263970541962",
+    "collation_count": 1,
+    "collation_id": "1419437659342351",
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/531222477_704730522526385_4337277504684273824_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=DMnlresZrpAQ7kNvwGl1BeY&_nc_oc=Adm6EFUOfucfslTxNunml48bESKCaqTRzfdSZt6HBxXiCNx9T3UDF45roS_erTbxBzI&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afsbl5X8oHkacDHFCoMq3AsqQsdt2C6rx9Kgyva0fpRFGA&oe=699B4A34",
+      "event": null,
+      "caption": "nickelback.komi.io",
+      "cta_text": null,
+      "cards": [
+        {
+          "body": "🎵 Cause we all just wanna be big Rockstars 🎵 #nickelback #rockstar #indie",
+          "cta_type": null,
+          "caption": "",
+          "link_description": null,
+          "link_url": null,
+          "title": null,
+          "cta_text": null,
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.35426-6/531110712_24321206854213852_7329242899917500972_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rGF35GR7S-4Q7kNvwFjW1xJ&_nc_oc=AdmasNnTXKvQsKVPyUTnYxHWtl1FzBWGfi79y-Fzg0iezoN7XooZ1skz2fPYTcmr0m8&_nc_zt=14&_nc_ht=scontent-mia3-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfvqfGf3YS1U6fvR5Fwu77WyXp3XUg45PlPLbxgech3GnA&oe=699B4E00",
+          "video_sd_url": "https://video-mia3-3.xx.fbcdn.net/o1/v/t2/f2/m412/AQOybDHxBkShOcjI1iERHjXLTCRwvgriZXYsD_a1Ucvupv2tzNzD89UWimhDUBioOg9OvUEIHh6sbLK8DBCOThruOx0KZh3NuX3ghFY8kw.mp4?_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-mia3-3.xx.fbcdn.net&_nc_ohc=7ZVRaGLThh0Q7kNvwEIie7e&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTc0MTg1NDA2NjQyNjk1NiwiYXNzZXRfYWdlX2RheXMiOjIwNCwidmlfdXNlY2FzZV9pZCI6MTAxMzksImR1cmF0aW9uX3MiOjI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_Afv7c6DLTHk3zlgPlVgVpJ8RuHWmR-8DSBJwJGUzGBexeQ&oe=699B4EA5",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": "",
+          "image_crops": [],
+          "original_image_url": null,
+          "resized_image_url": null,
+          "watermarked_resized_image_url": null
+        },
+        {
+          "body": "🎵 Cause we all just wanna be big Rockstars 🎵 #nickelback #rockstar #indie",
+          "cta_type": null,
+          "caption": "",
+          "link_description": null,
+          "link_url": null,
+          "title": null,
+          "cta_text": null,
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.35426-6/531288632_1290563909314137_1377911205059431083_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OaAhgSN9G2wQ7kNvwE5t1Mh&_nc_oc=Adkz88Fz5hhlbm1AGtaUfkiRpkpoBc3XPP77KqZPZUJOAlE3aUGXT-GQH5mBruBojvU&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afu5aZHUldq-JB6vvce90bkGq0NO_YXHXinkEdW1fYjmSw&oe=699B4582",
+          "video_sd_url": "https://video-mia3-1.xx.fbcdn.net/o1/v/t2/f2/m412/AQPa3BHWTn_nlSf3qNnZdIKiBB6ayhkP1ROSL4npG3bC76Qj1NAJWTCUNW3igpcXwisgVi5FKBuEyUgGCld0bFlqzZmd4zMbtZotqadeIw.mp4?_nc_cat=106&_nc_sid=8bf8fe&_nc_ht=video-mia3-1.xx.fbcdn.net&_nc_ohc=KoMcEUYmE-wQ7kNvwFvsUe9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzk0LnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MTI2NzM4MTI5NDg5MzgwNCwiYXNzZXRfYWdlX2RheXMiOjIwNCwidmlfdXNlY2FzZV9pZCI6MTA3OTksImR1cmF0aW9uX3MiOjI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_Aft03ZJeO_SHYXjjEjx3nNIyJ1f1N9LRdWBWP0iBbwCLyA&oe=699B7344",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": "",
+          "image_crops": [],
+          "original_image_url": null,
+          "resized_image_url": null,
+          "watermarked_resized_image_url": null
+        }
+      ],
+      "body": {
+        "text": "{{product.brand}}"
+      },
+      "cta_type": null,
+      "display_format": "DCO",
+      "link_description": null,
+      "link_url": "https://nickelback.komi.io/",
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": null,
+      "videos": [],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1756278000,
+    "publisher_platform": [
+      "INSTAGRAM"
+    ],
+    "start_date": 1754895600,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 4,
+    "ads_count": 1,
+    "start_date_formatted": "2025-08-11 07:00:00",
+    "end_date_formatted": "2025-08-27 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=1734263970541962"
+  },
+  {
+    "ad_archive_id": "2250248695408926",
+    "collation_count": 1,
+    "collation_id": "3405210569644778",
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/530806586_1249990323107526_2277205880241213027_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=M5SAQayj4BkQ7kNvwEeHqrA&_nc_oc=AdmTxdNIvyzvOVcjnHDCSfUsOkZtzN3v9inQuUoGyi2pJNXl6Eu0XbkTyDGl6QsKsZc&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afu2eBCkUm77jNIQhuGLZ064A8DGLlyMjlQqwn0LOxPJsw&oe=699B4FCD",
+      "event": null,
+      "caption": null,
+      "cta_text": null,
+      "cards": [],
+      "body": {
+        "text": "🎵 It's not like you to say sorry - I was waitin' on a different story 🎵 #nickelback #howyouremindme #indie"
+      },
+      "cta_type": null,
+      "display_format": "VIDEO",
+      "link_description": null,
+      "link_url": null,
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": null,
+      "videos": [
+        {
+          "video_hd_url": null,
+          "video_preview_image_url": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.35426-6/530602686_794056399633118_6083847026600531284_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0uX6LS0ZKM0Q7kNvwHDwOOV&_nc_oc=Adm6IF66u84ZCj_dCdvnXnwwsgI2_H_r4TKkoQR-bkj4iCdQpePSDpv-KErv-FkxNk8&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AftPNm38dSEyMjyxYUkAKeNqL1-bz4ukiFezJPI-xYQS3Q&oe=699B48A5",
+          "video_sd_url": "https://video-mia3-3.xx.fbcdn.net/o1/v/t2/f2/m412/AQNWmMm2erhxP0idIkX3bbxoyNyQ3qoEEns-U7wv8nJbC1MhHjjc7tRaR991_3WiGVVMlLTvVTbbm4rZk6inddX77rP1tQXXlGzIqzYWcg.mp4?_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-mia3-3.xx.fbcdn.net&_nc_ohc=qj_75ocfjyEQ7kNvwG-ZR_n&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5WSV9VU0VDQVNFX1BST0RVQ1RfVFlQRS4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjM5OTkxMDEwMjk3MTI4NjQsImFzc2V0X2FnZV9kYXlzIjoyMDQsInZpX3VzZWNhc2VfaWQiOjEwNzk5LCJkdXJhdGlvbl9zIjoxMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&_nc_zt=28&oh=00_AfsxOQ2AFZTwCup9Dloj7JWe6kC707ip9JjP3rfoN9dzCQ&oe=699B4C2A",
+          "watermarked_video_hd_url": "",
+          "watermarked_video_sd_url": ""
+        }
+      ],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1756364400,
+    "publisher_platform": [
+      "INSTAGRAM"
+    ],
+    "start_date": 1754895600,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 5,
+    "ads_count": 1,
+    "start_date_formatted": "2025-08-11 07:00:00",
+    "end_date_formatted": "2025-08-28 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=2250248695408926",
+    "analysis": {
+      "hook": null,
+      "transcript_analysis": {
+        "full_transcript": "🎶 Music Outro 🎶",
+        "has_speech": true,
+        "rejected_reason": "too_short"
+      },
+      "analysis_mode": "video_no_transcript",
+      "media_types_analyzed": [
+        "video"
+      ],
+      "analyzed_at": "2026-02-18T09:44:56.609Z"
+    }
+  },
+  {
+    "ad_archive_id": "1050719833603585",
+    "collation_count": null,
+    "collation_id": null,
+    "page_id": "6248267085",
+    "snapshot": {
+      "branded_content": null,
+      "page_id": "6248267085",
+      "page_is_deleted": false,
+      "page_profile_uri": "https://www.facebook.com/Nickelback/",
+      "root_reshared_post": null,
+      "byline": null,
+      "disclaimer_label": null,
+      "page_name": "Nickelback",
+      "page_profile_picture_url": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.35426-6/430143210_340865018294259_5725288858855190821_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=PsPMRRAuR1kQ7kNvwHjPc-Q&_nc_oc=Adlt6cY9Qu_e2wzc_BikXawCAao2Wf9vJRMFK7CMNLb5n5r7orD2WGmq2fhxp4AMU7Q&_nc_zt=14&_nc_ht=scontent-mia3-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfuRY2_cA6P9WfzCLH9BJOlnBXRWhUJcAIJg2CwoqcydWg&oe=699B4DDF",
+      "event": null,
+      "caption": "livenation.de",
+      "cta_text": "Shop now",
+      "cards": [
+        {
+          "body": "It’s time to Get Rollin’ on our World Tour! With special guest Lottery Winners along for the ride. Tickets for Frankfurt, Festhalle on 28 May 2024 are on sale NOW! 🤘",
+          "cta_type": "SHOP_NOW",
+          "caption": "",
+          "link_description": null,
+          "link_url": "https://www.ticketmaster.de/nickelback-festhalle-frankfurt-am-main/venueartist/18925/8678?utm_source=website&utm_medium=LNprioticket&utm_campaign=Lntmpresale&brand=de_livenation",
+          "title": null,
+          "cta_text": "Shop Now",
+          "video_hd_url": null,
+          "video_preview_image_url": null,
+          "video_sd_url": null,
+          "watermarked_video_hd_url": null,
+          "watermarked_video_sd_url": null,
+          "image_crops": [],
+          "original_image_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/430134795_915486123406868_6812709344346400334_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=6cQPnsQVuUkQ7kNvwF5ZdXY&_nc_oc=AdkJYVEb7CPl7wCcNwOAWevAfx-PY6uuzpQbc5c0prWWWOa8EVLT1slsFtCFzdJCrwM&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_Afst9OcTCzvckSqgjEmo6QK8WkvGfn_hKLu0j0WLG0VCvw&oe=699B5AFD",
+          "resized_image_url": "https://scontent-mia3-2.xx.fbcdn.net/v/t39.35426-6/430138206_774698647463823_6733800494531909853_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=OOXlQw9fYm0Q7kNvwEXQghd&_nc_oc=Adm6yMiXCWhK-8BjXZ2wdf8u0cTcYG9v6qZ3OQibeTphLCrjBVwEuweS0EzG2ITJeJw&_nc_zt=14&_nc_ht=scontent-mia3-2.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfsZ8gjjp94RA5gXdAFaYfjEZ12KaRX4iUUpFh6fZXDlww&oe=699B669E",
+          "watermarked_resized_image_url": ""
+        },
+        {
+          "body": "It’s time to Get Rollin’ on our World Tour! With special guest Lottery Winners along for the ride. Tickets for Frankfurt, Festhalle on 28 May 2024 are on sale NOW! 🤘",
+          "cta_type": "SHOP_NOW",
+          "caption": "",
+          "link_description": null,
+          "link_url": "https://www.ticketmaster.de/nickelback-festhalle-frankfurt-am-main/venueartist/18925/8678?utm_source=website&utm_medium=LNprioticket&utm_campaign=Lntmpresale&brand=de_livenation",
+          "title": null,
+          "cta_text": "Shop Now",
+          "video_hd_url": null,
+          "video_preview_image_url": null,
+          "video_sd_url": null,
+          "watermarked_video_hd_url": null,
+          "watermarked_video_sd_url": null,
+          "image_crops": [],
+          "original_image_url": "https://scontent-mia3-1.xx.fbcdn.net/v/t39.35426-6/430143400_1890427224710712_4242497919016101394_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=LVPmWxN--mwQ7kNvwH5fCD8&_nc_oc=Adkfy9xcUwIoaX5UBFe3UnlHJuyOiimiXsLcSqqoUg-3D9wYrewKtIRLAI-eYrUMcHI&_nc_zt=14&_nc_ht=scontent-mia3-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfswbeenBF4CW_j-pY0MyeoDDKFKEl78zWNanbzJptqOQw&oe=699B5247",
+          "resized_image_url": "https://scontent-mia5-1.xx.fbcdn.net/v/t39.35426-6/430139355_3689459531323452_4733736162689521967_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=AuLLvYRYzHUQ7kNvwFHQ9-x&_nc_oc=Adn_9zvXD_Ls5ODkfi_W6NuapG4h800whICHyyVQ1vqXJ9iYZH5eAS0tf-u0qe4Tw00&_nc_zt=14&_nc_ht=scontent-mia5-1.xx&_nc_gid=15j1Ku3XKW7V0_79OMzVMw&oh=00_AfuD4Ji5CEZ6tRMLdJO1TCBy3Y8NEaXgv7zuxvF44uEG6g&oe=699B5478",
+          "watermarked_resized_image_url": ""
+        }
+      ],
+      "body": {
+        "text": "It’s time to Get Rollin’ on our World Tour! With special guest Lottery Winners along for the ride. Tickets for Frankfurt, Festhalle on 28 May 2024 are on sale NOW! 🤘"
+      },
+      "cta_type": "SHOP_NOW",
+      "display_format": "DCO",
+      "link_description": "Tickets kaufen für Nickelback, Frankfurt am Main - Festhalle | Ticketmaster",
+      "link_url": "https://www.ticketmaster.de/nickelback-festhalle-frankfurt-am-main/venueartist/18925/8678?utm_source=website&utm_medium=LNprioticket&utm_campaign=Lntmpresale&brand=de_livenation",
+      "images": [],
+      "page_categories": [
+        "Musician"
+      ],
+      "page_like_count": 16031691,
+      "title": "Jetzt Tickets sichern!",
+      "videos": [],
+      "is_reshared": false,
+      "extra_links": [],
+      "extra_texts": [],
+      "extra_images": [],
+      "extra_videos": [],
+      "country_iso_code": null,
+      "brazil_tax_id": null,
+      "additional_info": null,
+      "ec_certificates": []
+    },
+    "is_active": false,
+    "has_user_reported": false,
+    "report_count": null,
+    "menu_items": [],
+    "state_media_run_label": null,
+    "page_is_deleted": false,
+    "page_name": "Nickelback",
+    "impressions_with_index": {
+      "impressions_text": null,
+      "impressions_index": -1
+    },
+    "gated_type": "ELIGIBLE",
+    "categories": [
+      "UNKNOWN"
+    ],
+    "is_aaa_eligible": true,
+    "contains_digital_created_media": false,
+    "reach_estimate": null,
+    "currency": "",
+    "spend": null,
+    "end_date": 1746082800,
+    "publisher_platform": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "AUDIENCE_NETWORK",
+      "MESSENGER"
+    ],
+    "start_date": 1715842800,
+    "contains_sensitive_content": false,
+    "total_active_time": null,
+    "regional_regulation_data": {
+      "finserv": {
+        "is_deemed_finserv": false,
+        "is_limited_delivery": false
+      },
+      "tw_anti_scam": {
+        "is_limited_delivery": false
+      }
+    },
+    "hide_data_status": "NONE",
+    "fev_info": null,
+    "ad_id": null,
+    "targeted_or_reached_countries": [],
+    "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=ALL&is_targeted_country=false&media_type=all&search_type=page&sort_data[mode]=relevancy_monthly_grouped&sort_data[direction]=desc&view_all_page_id=6248267085",
+    "total": 6,
+    "position": 6,
+    "ads_count": 1,
+    "start_date_formatted": "2024-05-16 07:00:00",
+    "end_date_formatted": "2025-05-01 07:00:00",
+    "ad_library_url": "https://www.facebook.com/ads/library/?id=1050719833603585"
+  }
+]

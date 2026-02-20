@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 5
+    },
+    "auditLog": "F:\\2026\\heystak_node_spider_backend\\logs\\.5e0eef64dd95e2113e9a709dd7aa581e5042b77b-audit.json",
+    "files": [
+        {
+            "date": 1771401846590,
+            "name": "F:\\2026\\heystak_node_spider_backend\\logs\\errors-2026-02-18.log",
+            "hash": "246c67102900dbeaad23bbeaa02e68433d25d5722d2d5ef4cfdfeb97eb3e8939"
+        },
+        {
+            "date": 1771477396187,
+            "name": "F:\\2026\\heystak_node_spider_backend\\logs\\errors-2026-02-19.log",
+            "hash": "ae4827e22c27b5e1384c1bbb9ee3a2de4daf47f9fdd5235ffe5cee0f97ad1aae"
+        },
+        {
+            "date": 1771569701445,
+            "name": "F:\\2026\\heystak_node_spider_backend\\logs\\errors-2026-02-20.log",
+            "hash": "408581f979daacc5d76fa7d35815523c46fa69dfaf7277424a01e0abf6e4782c"
+        }
+    ],
+    "hashType": "sha256"
+}

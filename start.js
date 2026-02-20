@@ -6,34 +6,29 @@
  */
 
 import { spawn } from 'child_process';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const cwd = process.cwd();
 
 console.log('='.repeat(50));
 console.log('Starting Spider Backend Services...');
 console.log('='.repeat(50));
 console.log();
-console.log('FastAPI Server: http://localhost:8000');
+console.log('API Server: http://localhost:8000');
 console.log('API Docs: http://localhost:8000/docs');
 console.log();
 console.log('Press Ctrl+C to stop both services');
 console.log();
 
 // Start API server
-const apiProcess = spawn('node', ['src/index.js'], {
-  cwd: __dirname,
+const apiProcess = spawn(process.execPath, ['src/index.js'], {
+  cwd,
   stdio: 'inherit',
-  shell: true,
 });
 
 // Start worker
-const workerProcess = spawn('node', ['src/worker.js'], {
-  cwd: __dirname,
+const workerProcess = spawn(process.execPath, ['src/worker.js'], {
+  cwd,
   stdio: 'inherit',
-  shell: true,
 });
 
 // Handle cleanup
