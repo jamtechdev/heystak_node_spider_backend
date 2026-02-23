@@ -36,7 +36,8 @@ router.get("/", async (req, res) => {
 
     const userBrandUrl = `${supabaseConfig.url}/rest/v1/user_brand`;
     const userBrandParams = {
-      select: "brand_id,last_scrap,brands!inner(*)",
+      select: "brand_id,last_scrap,ub_created_at:created_at,brands!inner(*)",
+      order: "created_at.desc",
       limit,
       offset,
     };
@@ -69,6 +70,7 @@ router.get("/", async (req, res) => {
         user_brand: {
           brand_id: item.brand_id,
           last_scrap: item.last_scrap,
+          created_at: item.ub_created_at,
         },
       }));
 
